@@ -33,7 +33,7 @@ if uploaded_file is not None:
     st.subheader("Bar Chart")
     st.bar_chart(data=df[column].value_counts())
 
-    st.header("Line Chart")
+    st.header("Scatter Chart")
     st.subheader("Select x and y axis for line chart")
     x = st.selectbox(
         "Select x",
@@ -46,7 +46,7 @@ if uploaded_file is not None:
     if x == y:
         st.warning("Please select different columns")
     else:
-        st.line_chart(data=df,x=x,y=y,x_label=x,y_label=y)
+        st.scatter_chart(data=df,x=x,y=y,x_label=x,y_label=y)
 
     st.header("Correlation Matrix")
     st.dataframe(df.corr(numeric_only=True))

@@ -95,9 +95,9 @@ streamlit run app.py
 
 ![Bar chart](screenshots/bar-chart.png)
 
-### Line Chart Visualization
+### Scatter Chart Visualization
 
-![Line chart](screenshots/line-chart.png)
+![Scatter chart](screenshots/scatter-chart.png)
 
 ### Correlation Matrix
 
