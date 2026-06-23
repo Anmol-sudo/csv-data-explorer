@@ -31,7 +31,7 @@ if uploaded_file is not None:
     )
 
     st.subheader("Bar Chart")
-    st.bar_chart(data=df[column])
+    st.bar_chart(data=df[column].value_counts())
 
     st.header("Line Chart")
     st.subheader("Select x and y axis for line chart")
